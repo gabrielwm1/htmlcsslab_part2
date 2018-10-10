@@ -1,0 +1,131 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+
+}
+a:hover{
+    background-color: black;
+    color: white;
+    border-radius:10px;
+}
+
+.wrap{
+    width: 80%;
+}
+
+/* .contentleft{
+    /* max-width: 70%; */
+/* } */ 
+.latin{
+    padding: 10px;
+    border-left: 1px solid black;
+}
+.btn {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    /* padding: 15px 32px; */
+    text-align: center;
+    width: 100%;
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    /* font-size: 16px; */
+}
+.contentright{
+    display:none;
+}
+@media only screen and (min-width:480px){
+    header{
+        position: relative;
+        
+    }
+    
+    h2 {
+        display: inline;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+    }
+    nav{
+        position: absolute;
+        right:2%;
+        top:50%;
+        width:35%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        transform: translateY(-50%);
+    }
+    
+    
+    .chirpus{
+        display: inline-block;
+    }
+    .maincontainter{
+        /* margin-top:100px; */
+        width:100px;
+    }
+    
+    .contentleft{
+        margin-top:125px;
+        width: 48%;
+        height:300px;
+        float: left;
+    }
+    .contentright{
+        margin-top: 125px;
+        width: 48%;
+        height: 300px;
+        position: relative;
+        display: inline-block;
+        float: right;
+    }
+    
+    .clearfix{
+        clear:both;
+    }
+    .beigeone {
+        position: absolute;
+        height: 115px;
+        width: 115px;
+        background-color:rgba(247, 193, 162, 0.7);
+        border-radius: 50%;
+        right:25%;
+        top:50%;
+      }
+    
+    .purpleone {
+        position: absolute;
+        height: 90px;
+        width: 90px;
+        background-color:rgba(207, 130, 213, 0.6);
+        border-radius: 50%;
+        right:23%;
+        top:35%;
+      }
+    
+    .pinkone{
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        background-color:rgba(247, 136, 167, 0.6);
+        border-radius: 50%;
+        display: inline-block;  
+        right:15%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .btn{
+        width:8%;
+        padding:3px;
+        display: flex;
+        justify-content: center; 
+    }
+    .centerbutton{
+        display:flex;
+        justify-content: center;
+    }
+}
